@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -47,9 +50,12 @@
             </span>
         </div>
         <div class="buttons">
-            <button onclick="allRecipes()" id="allButton">All Recipes <img src="./assets/button arrow.svg" alt=""></button>
-            <button onclick="vegRecipes()" id="vegButton">Veg Recipes Only<img src="./assets/button arrow.svg" alt=""></button>
-            <button onclick="nonVegRecipes()" id="nonVegButton">Non Veg Recipes<img src="./assets/button arrow.svg" alt=""></button>
+            <button onclick="allRecipes()" id="allButton">All Recipes <img src="./assets/button arrow.svg"
+                    alt=""></button>
+            <button onclick="vegRecipes()" id="vegButton">Veg Recipes Only<img src="./assets/button arrow.svg"
+                    alt=""></button>
+            <button onclick="nonVegRecipes()" id="nonVegButton">Non Veg Recipes<img src="./assets/button arrow.svg"
+                    alt=""></button>
         </div>
         <div class="home">
             <div class="filters">
@@ -64,6 +70,43 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div>
+            <div>
+                <img src="./assets/logo.svg" alt="">
+                <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <a href="">Home</a>
+                <a href="">Explore</a>
+                <a href="">Team</a>
+                <a href="">About Us</a>
+                <a href="">Activity</a>
+            </div>
+            <div>
+                <h3>Resources</h3>
+                <a href="">Blog</a>
+                <a href="">Use Cases</a>
+                <a href="">Testimonals</a>
+                <a href="">Insights</a>
+            </div>
+            <div>
+                <img src="./assets/logo.svg" alt="">
+                <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+                <div style="height: 2rem; display: flex; gap: 10px;" >
+                    <input type="text" placeholder="Your Email                     @" >
+                    <button style="background-color: green; color: white; padding-inline: 10px ;" >Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="social-links" >
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 

@@ -181,6 +181,33 @@ main {
     object-fit: cover;
     border-radius: 5px;
 }
+footer {
+    margin-top: 2rem;
+    padding: 0 10%;
+}
+footer>div {
+    display: grid; 
+    grid-template-columns: 3fr 2fr 2fr 3fr;
+    gap: 1rem;
+}
+footer>div>div {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+footer>div>div>img {
+    width: 6rem;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+.social-links>i{
+    scale: 2;
+}
 @media screen and (max-width: 768px) {
     nav, main, .hero{
         padding-inline: 2%;
@@ -232,5 +259,21 @@ main {
         z-index: 4;
         opacity: 0.5;
         display: none;
+    }
+    footer>div {
+        display: flex; 
+        flex-direction: column;
+        gap: 1rem;
+    }
+    footer>div>div {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    footer>div>div>img {
+        width: 6rem;
+    }
+    .social-links{
+        flex-direction: row;
     }
 }
