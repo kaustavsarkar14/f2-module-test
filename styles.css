@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navButton {
+    display: none;
+    cursor: pointer;
+}
+
+nav {
+    background-color: red;
+    padding: 10px 10%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.nav-items>img {
+    margin-left: 3rem;
+}
+
+.hero {
+    padding: 0 10%;
+    width: 100%;
+}
+
+.hero>img {
+    width: 100%;
+}
+
+main {
+    padding: 0 10%;
+}
+
+#mobileNav {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    align-items: start;
+    gap: 1rem;
+}
+
+#mobileNav>div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+#mobileNav>img {
+    width: 2rem;
+}
+#mobileNav>div>img {
+    height: 2rem;
+}
+
+.search {
+    background-color: #F3F3F3;
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    padding-left: 5px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.search>span:first-child{
+    opacity: 0.5;
+}
+.search>input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#searchButton {
+    background-color: #509E2F;
+    height: 100%;
+    display: flex;
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 2rem 0;
+}
+.buttons>button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+#allButton {
+    background: #EAAA00;
+}
+#vegButton {
+    background: #C4D600;
+}
+#nonVegButton {
+    background: #DC582A;
+}
+.home {
+    display: flex;
+}
+.filters {
+    width: 20%;
+    padding: 10px;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.item {
+    width: 19rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.item>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.item>div>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.item>div>div>span {
+    display: flex;
+    align-items: center;
+}
+.item>img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+    nav, main, .hero{
+        padding-inline: 2%;
+    }
+    #navButton {
+        display: block;
+    }
+
+    nav {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    #mobileNav {
+        display: none;
+        position: fixed;
+        z-index: 10;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .filters {
+        width: 100%;
+    }
+    .filters>h4 {
+        display: none;
+    }
+    .filters>br {
+        display: none;
+    }
+    .item {
+        width: 10rem;
+        height: 20rem;
+        padding-block: 5px;
+    }
+    .items {
+        justify-content: space-between;
+    }
+    #shadow {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        z-index: 4;
+        opacity: 0.5;
+        display: none;
+    }
+}

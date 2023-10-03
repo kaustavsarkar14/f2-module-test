@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <span id="navButton" class="material-icons">
+            menu
+        </span>
+        <img src="./assets/logo.svg" alt="">
+        <div class="nav-items">
+            <a href="#home">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#help">Help</a>
+            <img src="./assets/pfp.svg" alt="">
+        </div>
+    </nav>
+    <div id="shadow"></div>
+    <div style="display: none;" id="mobileNav">
+        <div>
+            <img src="./assets/logo.svg" alt="">
+            <a href="#home">Home</a>
+            <a href="#explore">Explore</a>
+            <a href="#help">Help</a>
+        </div>
+        <img src="./assets/pfp.svg" alt="">
+    </div>
+    <section class="hero">
+        <img src="./assets/hero.png" alt="">
+    </section>
+    <main>
+        <h4 style="margin: .5rem 0;">Search For Recipes</h4>
+        <div class="search">
+            <span class="material-icons">
+                search
+            </span>
+            <input oninput="handleChange(this)" type="text" placeholder="Search for recipes...">
+            <span id="searchButton" class="material-icons">
+                search
+            </span>
+        </div>
+        <div class="buttons">
+            <button onclick="allRecipes()" id="allButton">All Recipes <img src="./assets/button arrow.svg" alt=""></button>
+            <button onclick="vegRecipes()" id="vegButton">Veg Recipes Only<img src="./assets/button arrow.svg" alt=""></button>
+            <button onclick="nonVegRecipes()" id="nonVegButton">Non Veg Recipes<img src="./assets/button arrow.svg" alt=""></button>
+        </div>
+        <div class="home">
+            <div class="filters">
+                <h4>Filters</h4>
+                <h5>Rating</h5>
+                <input id="four_and_above" type="checkbox">
+                <label for="four_and_above">4 and Above</label><br>
+                <input id="below_four" type="checkbox">
+                <label for="below_four">Below 4</label>
+            </div>
+            <div id="items" class="items">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
